@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "healthguardian-axma",
+  "private_key_id": "09dcea40d3c911e78d414b779b9b4ddcd6498abc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDIfBZljkckWy08\nGscGmSvEv2ZGoRCjI0EpZ3sZdD1uRMJzKZVLQVuodnNRLcjmRR6bEg/vdU/xnF6G\nzexj8iP5ivQUilHumId91blU7cvvC97ecvQmtdi3VFfoscfupkDwmbbHF6FnO1Za\nVGW05hSqcwmBzmbRJ0dpygK4K42eQ9pJpje8Nw0o6JNBYwU/h4bzOj0RWoL+d3vP\nKRYcg2UQnODQIEVYSi0y350Xy3dQ1QNDRZiZ/zh9FWvCiZTzbNz0c0mAP3Cp5SVS\nMN65qgxeEvNM+wAjtfXJex6KRFCrE8z90F99kAXQWgq7EVqToSs6Wyy7qH20di7V\n2dyJg3A5AgMBAAECggEAAWihzafgxxge6r+za0/zN0gzA0cJc2QBhrVz73taHSa9\niQqfQm6cosPmTok4Uqnkq6lGVGPqImP7ZA4ZXaBrcUrxKR3Jspf+x7sTOM4M80qN\nj9mV7pmzgqJEld197qbbaPVji+WWHEAV/L+AEXPWbFYvmGpnXYvdnBgvybSAo76K\nIJR2Mf8EVZ6DGJU6FL5TUVXt/aZpOoqyZHUk9bLGSXnM85AXBChz2jEqpr8lweDS\nb6UwRhVw1fGD7CzSJzAAsGvFMDMtAsPajuN13tRaj4md4DWWWuBcEKEDo5G6FY7z\n5H69vqsCS/0zcgglIX7JRxGg3WH40vYTb6B+BgMCwwKBgQDijh93DO7FlqGjU2uw\nkGCB9D9GqHXFGukb1QBoepOuilkJyIdvGKDpKkxd/lZ2vd80ZfuVJ6zyP0feErM4\n4EyjhCDKPvF0V+IJC16gWHwADGFGJtvfptWstlWxcFWauPQodKqtB0/497RPFerI\nVKMva01E70WUzddDzFE3ZFWyUwKBgQDiio5h7JfetI0kIgr5h7v4rR94umPWGPcz\nsiWqqZbGOpyMnNZ/8ZJ3p0dzZ2W2WERLr6JzCNsTKVEaOmdFjizNE8jYxj6UrLO2\naLjOM3hS+yZ3mX61fmyv7QWXBtPw/g4omFxSVrMlB5+ngLASB3JL8QR949NePJDM\noIFVpZOZwwKBgQCpERyEED+jbjyjkJ5dvfB3KlmKFi8E74ckQPkz/r101EOL3HzN\nOFjkh69DuYi2xgzqomxzq48RnI26OMRMXn5yzChYJU603tyMmVJ9YGrw8kwpONh+\nd5cfc1ZRux32/60c/6tawok4p0mEdzulUhwRSAb6uYB4gn/xVWkKaDLXhwKBgQCD\nXj2642weJS1DqsoacW+7gQkjBVMnsEqJm+Dj2nwob4ygrcJlZzy8TjDM50TAPOc9\nzJezhYskzWzOfNeuKggo1DRAIJXhuVRtjsS8LnS0ChgAeu5TaQC19Aitz7PPqEOl\nntTKmqQ/8O/QPnvbuJ27FAS6zAaiOxTs1Jarh9zT6QKBgQCEzD5VlIq71u6K5vQh\ne44piS7hA5GmLnWHURKc8yTSUmqFWr610rziqez9cZ1szQ/jABe+XzLgpBUjJaaC\n4wFcFXE7oDoF3LshZnpuQ3kmyXjxliFfuruD0iLVhaKSOBLw3GuwS0WUVZFH5ZPH\nRFioo9EmbObGhokjn7DQjQNO7A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "healthguardian@healthguardian-axma.iam.gserviceaccount.com",
+  "client_id": "105945692106874648618",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/healthguardian%40healthguardian-axma.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
