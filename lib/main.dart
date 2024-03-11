@@ -1,5 +1,5 @@
-import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:flutter/material.dart';
+import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:chatbot/Messages.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AMBot',
+      debugShowCheckedModeBanner: false,
+      title: 'HeathGuardian',
       theme: ThemeData(brightness: Brightness.dark),
       home: Home(),
     );
@@ -40,7 +41,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AMBot'),
+        title: Text('HealthGuardian CoDoctor'),
       ),
       body: Container(
         child: Column(
@@ -52,44 +53,47 @@ class _HomeState extends State<Home> {
               child: Row(
                 children: [
                   Expanded(
-                      child: TextField(
-                    controller: _controller,
-                    style: TextStyle(color: Colors.white),
-                  )),
+                    child: TextField(
+                      controller: _controller,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
                   IconButton(
-                      onPressed: () {
-                        sendMessage(_controller.text);
-                        _controller.clear();
-                      },
-                      icon: Icon(Icons.send))
+                    onPressed: () {
+                      sendMessage(_controller.text);
+                      _controller.clear();
+                    },
+                    icon: Icon(Icons.send),
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
     );
   }
-}
 
-sendMessage(String text) async {
-  if (text.isEmpty) {
-    print('Message is empty');
-  } else {
-    setState(() {
-      addMessage(Message(text: DialogText(text: [text])), true);
-    });
+  void sendMessage(String text) async {
+    if (text.isEmpty) {
+      print('Message is empty');
+    } else {
+      setState(() {
+        addMessage(Message(text: DialogText(text: [text])), true);
+      });
 
-    DetectIntentResponse response = await DialogFlowtter.detectIntent(
-        queryInput: QueryInput(text: TextInput(text: text)));
-    if (response.message == null) return;
-    setState(() {
-      addMessage(response.message!);
-    });
+      DialogFlowtter dialogFlowtter = await DialogFlowtter.fromFile();
+      DetectIntentResponse response = await dialogFlowtter.detectIntent(
+        queryInput: QueryInput(text: TextInput(text: text)),
+      );
+      if (response.message == null) return;
+      setState(() {
+        addMessage(response.message!);
+      });
+    }
   }
-}
 
-addMessage(Message message, [bool isUserMessage = false]) {
-  messages.add({'message': message, 'isUserMessage': isUserMessage});
-}
+  void addMessage(Message message, [bool isUserMessage = false]) {
+    messages.add({'message': message, 'isUserMessage': isUserMessage});
+  }
 }
